@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            height: 800px;
+            width: 1089px;
+            background-color: aquamarine;
+            border: black;
+        }
+        
+        .header {
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(211, 233, 90);
+            border-bottom: 1px solid black;
+            position: relative;
+        }
+        
+        .header .p1 {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            color: blanchedalmond;
+            font-size: 35px;
+        }
+        
+        .header .p2 {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            color: blanchedalmond;
+            font-size: 30px;
+            text-shadow: rgb(88, 72, 228) 10px 10px 5px;
+        }
+        
+        .nav {
+            height: 50px;
+            width: 1089px;
+            background-color: burlywood;
+            border-bottom: 1px solid black;
+            background-color: rgb(115, 201, 228);
+        }
+        
+        ul.menu .l1 {
+            width: 20%;
+            height: 50px;
+            background-color: rgb(115, 201, 228);
+            float: left;
+            list-style-type: none;
+        }
+        
+        li a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        
+        .menu li:hover {
+            background-color: coral;
+        }
+        
+        li a {
+            font-style: italic;
+        }
+        
+        .menu li .sub-menu {
+            display: none;
+        }
+        
+        .sub-menu li {
+            background-color: rgb(115, 201, 228);
+            text-decoration-style: none;
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menu li .sub-menu {
+            display: block;
+            top: 201px;
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            right: 750px;
+            text-decoration-style: none;
+            list-style: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .menu li:hover .sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="../img/ganhdadia.jfif" alt="" srcset="" height="150" width="1089">
+            <p class="p1">Tham Quan</p>
+            <p class="p2">Thang Canh</p>
+        </div>
+        <div class="menu"></div>
+        <ul class="menu">
+            <li class="l1"><a href="#">HOME</a></li>
+            <li class="l1"><a href="#">SERVIECES</a></li>
+            <li class="l1"><a href="#">CONTACT</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Dia Diem</a></li>
+                    <li><a href="#">Check in</a></li>
+                    <li><a href="#">Perfect</a></li>
+                </ul>
+            </li>
+            <li class="l1"><a href="#">ABOUT</a></li>
+            <li class="l1"><a href="#">HELP</a></li>
+        </ul>
+        <div class="content">
+            <div class="aside"></div>
+            <div class="section"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
